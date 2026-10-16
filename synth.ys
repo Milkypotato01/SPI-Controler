@@ -1,0 +1,4 @@
+read_verilog -sv rtl/sync_ff.sv rtl/baud_generator.sv rtl/shift_register.sv rtl/spi_master_fsm.sv rtl/spi_master.sv
+hierarchy -check -top spi_master
+synth -flatten -top spi_master
+stat
